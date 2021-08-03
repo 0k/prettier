@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "esnext"
+        ],
+        "sourceMap": true,
+        "alwaysStrict": true,
+        "strictNullChecks": true,
+        "noImplicitAny": true,
+        "outDir": "build"
+    },
+    "files": [
+        "src/index.ts"
+    ],
+    "include": ["src/**/*", "references.d.ts"],
+    "exclude": ["node_modules", "platforms", "**/angular"]
+}

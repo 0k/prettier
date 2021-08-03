@@ -1,0 +1,17 @@
+# -*- ispell-local-dictionary: "english" -*-
+
+#+TITLE: @0k.io/prettier
+
+0k's version of =prettier=
+
+* Install
+
+#+begin_src sh
+npm install -D @0k.io/prettier
+#+end_src
+
+
+* Specificities
+
+This version of prettier will keep newlines.
+

@@ -1,0 +1,27 @@
+{
+  "name": "@0k.io/prettier",
+  "version": "%%version%%",
+  "description": "Newline preserving prettier",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "bin": {
+    "prettier": "./bin/prettier.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ts": "ts-node src/",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Valentin Lab",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^15.12.2",
+    "@types/prettier": "^2.3.2",
+    "ts-node": "^10.1.0",
+    "typedoc": "^0.21.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "prettier": "^2.3.2"
+  }
+}
