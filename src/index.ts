@@ -3,7 +3,7 @@
 // From: https://github.com/prettier/prettier/issues/554#issuecomment-351517698
 // Many thanks @tqwhite
 
-import { format } from "prettierx"
+import { format } from 'prettierx'
 
 type filter = (s: string) => string
 
@@ -13,11 +13,10 @@ let unprotectWS: filter = (s) =>
     '\n'
 
 
-export function run(argv: string[]) {
+export function run (argv: string[]) {
     let inputData = ''
     let pre: filter[] = []
     let post: filter[] = []
-
 
     let opt = {
         singleQuote: true,
