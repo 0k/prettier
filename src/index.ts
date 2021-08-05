@@ -3,13 +3,14 @@
 // From: https://github.com/prettier/prettier/issues/554#issuecomment-351517698
 // Many thanks @tqwhite
 
-import { format } from 'prettier'
+import { format } from "prettierx"
 
 type filter = (s: string) => string
 
 let protectWS: filter = (s) => s.replace(/^[^\S\r\n]*$/gm, '/*linebreak*/')
 let unprotectWS: filter = (s) =>
-    s.replace(/^[^\S\r\n]*\/\*linebreak\*\/$/gm, '')
+    s.replace(/^[^\S\r\n]*\/\*linebreak\*\/$/gm, '').replace(/[\n]*$/g, '') +
+    '\n'
 
 
 export function run(argv: string[]) {
@@ -22,6 +23,7 @@ export function run(argv: string[]) {
         singleQuote: true,
         semi: false,
         tabWidth: 4,
+        spaceBeforeFunctionParen: true,
     } as any
     if (argv[0] === '--stdin-filepath') {
         opt.filepath = argv[1]
