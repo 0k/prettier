@@ -23,6 +23,7 @@ export function run (argv: string[]) {
         semi: false,
         tabWidth: 4,
         spaceBeforeFunctionParen: true,
+        printWidth: 80,
     } as any
     if (argv[0] === '--stdin-filepath') {
         opt.filepath = argv[1]
