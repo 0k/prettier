@@ -2,7 +2,8 @@
 
 #+TITLE: @0k.io/prettier
 
-0k's version of =prettier=
+0k's own tuning of =prettier=
+
 
 * Install
 
@@ -11,7 +12,20 @@ npm install -D @0k.io/prettier
 #+end_src
 
 
-* Specificities
+* Specificity
 
-This version of prettier will keep newlines.
+This package is meant as a single package to import with no
+configuration files and a opinionated default configuration.
 
+#+begin_src yaml
+singleQuote: true
+semi: false
+tabWidth: 4
+spaceBeforeFunctionParen: true
+printWidth: 80
+#+end_src
+
+Note that it uses =prettierx= under the hood to unsure the
+capability of setting =spaceBeforeFunctionParen=.
+
+This package can change without notice, but provides tags.
