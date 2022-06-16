@@ -24,6 +24,9 @@ export function run (argv: string[]) {
         tabWidth: 4,
         spaceBeforeFunctionParen: true,
         printWidth: 80,
+        generatorStarSpacing: true,
+        trailingComma: true,
+        yieldStarSpacing: true,
     } as any
     if (argv[0] === '--stdin-filepath') {
         opt.filepath = argv[1]
