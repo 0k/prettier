@@ -1,6 +1,6 @@
 # -*- ispell-local-dictionary: "english" -*-
 
-#+TITLE: @0k.io/prettier
+#+TITLE: @0k/prettier
 
 0k's own tuning of =prettier=
 
@@ -8,7 +8,7 @@
 * Install
 
 #+begin_src sh
-npm install -D @0k.io/prettier
+npm install -D @0k/prettier
 #+end_src
 
 
