@@ -1,4 +1,4 @@
-NAME="@0k.io/prettier"
+NAME="@0k/prettier"
 DESCRIPTION="0k's {java,type}script prettifier's own mod"
 EMAIL="valentin.lab@kalysto.org"
 AUTHOR="Valentin LAB"

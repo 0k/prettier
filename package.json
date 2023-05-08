@@ -1,5 +1,5 @@
 {
-  "name": "@0k.io/prettier",
+  "name": "@0k/prettier",
   "version": "%%version%%",
   "description": "Newline preserving prettier",
   "main": "./build/index.js",
